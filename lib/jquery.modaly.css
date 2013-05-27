@@ -1,0 +1,5 @@
+#modaly-overlay { background-color: #000; display: none; height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 10000 }
+
+.modaly { display: none; width: 50% }
+.modaly .modaly-close { background: none; border: none; cursor: pointer; font-size: 2.2em; font-weight: bold; opacity: .2; position: absolute; right: 6px; text-shadow: 0 1px 0 #FFF; top: 3px }
+.modaly .modaly-close:hover { opacity: .4; filter: alpha(opacity = 40) }
