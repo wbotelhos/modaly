@@ -64,13 +64,11 @@
 .demo .button.gray:active { background-color: #DADADA; background-image: none; border-color: #51A7E8; }
 
 /* custom */
-.modaly .header { background: url('../img/modal.png') repeat; border-bottom: 1px solid #CCC; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 10px 18px 7px }
 .modaly .header h3 { font-size: 2em; margin-bottom: 3px; margin-top: 0; text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) }
 .modaly .header p { color: #444; font-size: 1.3em; margin: 7px 0px; text-shadow: none }
-.modaly .header .close { font-size: 2.2em; font-weight: bold; position: absolute; right: 14px; text-shadow: 0 1px 0 #FFF; top: 3px }
-.modaly .header .close:hover { opacity: .7; filter: alpha(opacity = 40) }
+.modaly .header a.close { font-size: 2.2em; position: absolute; right: 14px; top: 3px }
 
-.modaly .body { background-color: #FFF; color: #111; font-size: 1.4em; overflow: auto; padding: 10px 0 21px; text-align: center }
+.modaly .body { font-size: 1.4em; text-align: center }
 .modaly .body ul li { text-align: left }
 
 .demo .open { font-size: 1.4em }

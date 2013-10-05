@@ -5,7 +5,7 @@ jQuery Modaly is a plugin that generates a simple modal window.
 ## Version
 
 ```
-@version        0.1.0
+@version        0.2.0
 @since          2013-04-27
 @author         Washington Botelho
 @documentation  wbotelhos.com/modaly
@@ -27,7 +27,7 @@ closeTarget  : '.modaly-close' // Hook of the close button.
 esc          : true            // Enable the key esc to close the modal.
 overlay      : .5              // Overlay applied on overlay.
 speed        : 200             // Speed to open and close the modal.
-top          : 100             // Distance between top of window and the modal.
+top          : undefined       // Distance between top of window and the modal.
 ```
 
 ## Usage
