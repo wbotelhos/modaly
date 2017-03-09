@@ -1,4 +1,6 @@
 describe('Modaly', function() {
+  'use strict';
+
   beforeEach(function() {
     Factory.html(
       '<a href="#modal" class="open">open</a>' +
@@ -49,7 +51,7 @@ describe('Modaly', function() {
         it ('closes the modal', function() {
           // given
           var link  = $('.open').modaly({ closeButton: true }).click(),
-              close = $('.modaly-close');
+            close = $('.modaly-close');
 
           // when
           close.click();
@@ -71,8 +73,9 @@ describe('Modaly', function() {
 
         it ('reuses the same overlay', function() {
           // given
-          var link1 = $('.open')
-              link2 = $('.open-2');
+          var
+            link1 = $('.open'),
+            link2 = $('.open-2');
 
           // when
           link1.modaly();
@@ -166,7 +169,7 @@ describe('Modaly', function() {
         it ('is closed', function() {
           // given
           var link    = $('.open').modaly({ closeOverlay: true }).click(),
-              overlay = $('#modaly-overlay');
+            overlay = $('#modaly-overlay');
 
           // when
           overlay.click();
@@ -180,7 +183,7 @@ describe('Modaly', function() {
         it ('is not closed', function() {
           // given
           var link    = $('.open').modaly({ closeOverlay: false }).click(),
-              overlay = $('#modaly-overlay');
+            overlay = $('#modaly-overlay');
 
           // when
           overlay.click();
@@ -199,7 +202,7 @@ describe('Modaly', function() {
       it ('changes the hook element', function() {
         // given
         var link   = $('.open').modaly({ closeTarget: '.custom-close' }).click(),
-            button = $('.custom-close');
+          button = $('.custom-close');
 
         // when
         button.click();
@@ -342,6 +345,32 @@ describe('Modaly', function() {
                 expect($('#modal').attr('style').indexOf('0px')).toBeGreaterThan(0);
               });
             });
+          });
+        });
+      });
+    });
+
+    describe('prevent', function() {
+      context('when enable', function() {
+        context('and element is a checkbox', function() {
+          it ('prevents to be checked inside other callbacks', function() {
+            // given
+            var checkbox = $('<input />', { href: '#modal', type: 'checkbox' });
+
+            Factory.append(checkbox);
+
+            checkbox.modaly({ block: true }).on('click', function() {
+              // then
+              var self = $(this);
+
+              expect(self.attr('checked')).toBeFalsy();
+              expect(self.is(':checked')).toBeFalsy();
+              expect(self.prop('checked')).toBeFalsy();
+              expect(this.checked).toBeFalsy();
+            });
+
+            // when
+            checkbox.trigger('click');
           });
         });
       });
