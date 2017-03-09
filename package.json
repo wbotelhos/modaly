@@ -1,0 +1,51 @@
+{
+  "author": "Washington Botelho",
+
+  "bugs": {
+    "url": "https://github.com/wbotelhos/modaly/issues"
+  },
+
+  "contributors": ["Washington Botelho <wbotelhos@gmail.com> (http://wbotelhos.com)"],
+  "demos":        ["index.html"],
+
+  "dependencies" : {
+    "jquery": "3.1.1"
+  },
+
+  "description": "jQuery Modaly - A Modal Plugin",
+
+  "devDependencies": {
+    "karma-chrome-launcher":    "0.1",
+    "karma-firefox-launcher":   "0.1",
+    "karma-ie-launcher":        "0.1",
+    "karma-jasmine":            "0.2",
+    "karma-opera-launcher":     "0.1",
+    "karma-phantomjs-launcher": "0.1",
+    "karma-safari-launcher":    "0.1",
+    "karma":                    "0.12",
+  },
+
+  "directories": {
+    "lib":  "lib",
+    "test": "spec"
+  },
+
+  "engines":     { "node" : "0.10" },
+  "homepage":    "https://github.com/wbotelhos/modaly",
+  "keywords":    ["jquery", "plugin", "jquery", "modal", "modaly", "popup", "lightbox", "window", "overlay", "box"],
+  "license":     "MIT",
+  "main":        "lib/jquery.modaly.js",
+  "maintainers": ["Washington Botelho <wbotelhos@gmail.com> (http://wbotelhos.com)"],
+  "name":        "modaly",
+
+  "repository": {
+    "type": "git",
+    "url":  "https://github.com/wbotelhos/modaly"
+  },
+
+  "scripts": {
+    "test": "node_modules/karma/bin/karma start spec/karma.conf.js"
+  },
+
+  "version": "0.3.0"
+}
