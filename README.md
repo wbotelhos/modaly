@@ -58,7 +58,7 @@ $('a').modaly('block', boolean); // Block or unblock the modal.
 
 ## Licence
 
-The MIT License
+[The MIT License](http://opensource.org/licenses/MIT)
 
 ## Donate
 
