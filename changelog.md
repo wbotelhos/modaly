@@ -1,5 +1,20 @@
 # jQuery Modaly - A Modal Plugin - http://wbotelhos.com/modaly
 
+## 0.3.0
+
+### News
+
++ Added options `attribute` to change the anchor's attribute used to find the modal;
++ Added options `prevent` to prevent or not the click action on binded element;
++ Now you can bind directly on modal and open it via API besides an element;
++ Plugin published at Bower;
++ Plugin published at NPM;
++ Removed fixed `height` from CSS.
+
+### Fixes
+
++ Make sure that checkbox is keeped unchecked into other callbacks, when clicked, if `block` options is `true`.
+
 ## 0.2.0
 
 ### News
