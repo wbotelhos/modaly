@@ -1,0 +1,27 @@
+env:
+  browser: true
+
+rules:
+  array-bracket-spacing: ['error', 'never']
+  comma-spacing: ['error', { before: false, after: true }]
+  indent: [2, 2]
+  key-spacing: ['error', { 'align': 'value' }]
+  keyword-spacing: ['error', { before: true }]
+  no-trailing-spaces: 1
+  object-curly-spacing: ['error', 'always']
+  quotes: [2, single]
+  space-before-blocks: 'error'
+  space-before-function-paren: ['error', 'never']
+  space-in-parens: ['error', 'never']
+  strict: [2, 'function']
+
+  no-multi-spaces: [1, {
+    exceptions: {
+      AssignmentExpression: true,
+      VariableDeclarator:   true
+    }}]
+
+globals:
+  $:        true
+  document: true
+  window:   true
