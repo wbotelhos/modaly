@@ -8,7 +8,7 @@
   "contributors": ["Washington Botelho <wbotelhos@gmail.com> (http://wbotelhos.com)"],
   "demos":        ["index.html"],
 
-  "dependencies" : {
+  "dependencies": {
     "jquery": "3.1.1"
   },
 
@@ -22,7 +22,7 @@
     "karma-opera-launcher":     "0.1",
     "karma-phantomjs-launcher": "0.1",
     "karma-safari-launcher":    "0.1",
-    "karma":                    "0.12",
+    "karma":                    "0.12"
   },
 
   "directories": {
