@@ -44,7 +44,7 @@ top:          undefined       // Distance between top of window and the modal.
 ```
 
 ```js
-$('a').modal();
+$('a').modaly();
 ```
 
 ## Functions
