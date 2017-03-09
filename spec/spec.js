@@ -103,6 +103,7 @@ describe('Modaly', function() {
       expect(opt.closeTarget).toEqual('.modaly-close');
       expect(opt.esc).toBeTruthy();
       expect(opt.overlay).toEqual(.5);
+      expect(opt.prevent).toBeTruthy();
       expect(opt.top).toEqual(undefined);
     });
 
@@ -429,6 +430,23 @@ describe('Modaly', function() {
           // then
           expect($('#modal').data('opened')).toBeTruthy();
         });
+      });
+    });
+  });
+
+  describe('anchorless', function() {
+    context('when click on some element over the modal', function() {
+      it ('avoids the click propagation on the self modal again', function() {
+        // given
+        var modal = $('#modal').modaly();
+
+        modal.modaly('open');
+
+        // when
+        modal.find('.modaly-close').trigger('click');
+
+        // then
+        expect(modal.data('opened')).toBeFalsy();
       });
     });
   });
