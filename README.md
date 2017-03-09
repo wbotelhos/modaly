@@ -35,7 +35,7 @@ top:          undefined       // Distance between top of window and the modal.
 
 ```html
 <div id="modal">
-  <input type="button" value="×" class="modaly-close" />
+  <span class="modaly-close">x</span>
 </div>
 ```
 
