@@ -26,6 +26,7 @@ closeOverlay: true            // Enable close modal clicking on overlay.
 closeTarget:  '.modaly-close' // Hook of the close button.
 esc:          true            // Enable the key esc to close the modal.
 overlay:      .5              // Overlay applied on overlay.
+prevent:      true            // Prevent the click action on binded element.
 speed:        200             // Speed to open and close the modal.
 top:          undefined       // Distance between top of window and the modal.
 ```
