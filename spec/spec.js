@@ -30,7 +30,7 @@ describe('Modaly', function() {
       link.modaly();
 
       // then
-      expect($('#modaly-overlay')).toExist();
+      expect($('#modaly-overlay').length).toEqual(1);
     });
 
     it ('starts hidden', function() {
