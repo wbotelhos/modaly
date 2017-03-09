@@ -376,6 +376,23 @@ describe('Modaly', function() {
         });
       });
     });
+
+    describe('attribute', function() {
+      it ('changes the attribute responsible to indicate the modal', function() {
+        // given
+        var checkbox = $('<input />', { 'data-href': '#modal', type: 'checkbox' });
+
+        Factory.append(checkbox);
+
+        checkbox.modaly({ attribute: 'data-href' });
+
+        // when
+        checkbox.modaly('open');
+
+        // then
+        expect($('.modal').data('opened')).toBeTruthy();
+      });
+    });
   });
 
   describe('functions', function() {
