@@ -12,5 +12,5 @@
   "license":  "MIT",
   "main":     "lib/jquery.modaly.js",
   "name":     "modaly",
-  "version":  "0.3.0"
+  "version":  "0.4.0"
 }
