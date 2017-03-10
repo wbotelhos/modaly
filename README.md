@@ -5,7 +5,7 @@ jQuery Modaly is a plugin that generates a simple modal window.
 ## Version
 
 ```
-@version        0.3.0
+@version        0.4.0
 @since          2013-04-27
 @author         Washington Botelho
 @documentation  wbotelhos.com/modaly

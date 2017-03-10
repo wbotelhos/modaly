@@ -1,5 +1,12 @@
 # jQuery Modaly - A Modal Plugin - http://wbotelhos.com/modaly
 
+## 0.4.0
+
+### News
+
++ The `open` function api can receive a hash param with keys that will be added on modal as data parameters.
++ The `close` function api can receive an array of data keys as param that will be removed from modal.
+
 ## 0.3.0
 
 ### News
