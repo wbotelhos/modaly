@@ -50,11 +50,15 @@ $('a').modaly();
 ## Functions
 
 ```js
-$('a').modaly('close');          // Close the modal.
+$('a').modaly('open');                   // Open the modal.
 
-$('a').modaly('open');           // Open the modal.
+$('a').modaly('open', { key: 'value' }); // Open and add params at modal.
 
-$('a').modaly('block', boolean); // Block or unblock the modal.
+$('a').modaly('close');                  // Close the modal.
+
+$('a').modaly('close', ['key']);         // Close and removes keys data from modal.
+
+$('a').modaly('block', boolean);         // Block or unblock the modal.
 ```
 
 ## Licence
