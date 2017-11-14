@@ -3,7 +3,7 @@
   "description": "jQuery Modaly - A Modal Plugin",
 
   "dependencies": {
-    "jquery": "3.1.1"
+    "jquery": "^3.2.1"
   },
 
   "homepage": "https://github.com/wbotelhos/modaly",
@@ -11,6 +11,5 @@
   "keywords": ["jquery", "plugin", "jquery", "modal", "modaly", "popup", "lightbox", "window", "overlay", "box"],
   "license":  "MIT",
   "main":     "lib/jquery.modaly.js",
-  "name":     "modaly",
-  "version":  "0.4.0"
+  "name":     "modaly"
 }
