@@ -15,14 +15,17 @@
   "description": "jQuery Modaly - A Modal Plugin",
   "devDependencies": {
     "jasmine-core": "^2.8.0",
-    "karma": "^1.7.1",
+    "jasmine-jquery": "^2.1.1",
     "karma-chrome-launcher": "^2.2.0",
     "karma-firefox-launcher": "^1.0.1",
+    "karma-fixture": "^0.2.6",
+    "karma-html2js-preprocessor": "^1.1.0",
     "karma-ie-launcher": "^1.0.0",
     "karma-jasmine": "^1.1.0",
     "karma-opera-launcher": "^1.0.0",
     "karma-phantomjs-launcher": "^1.0.4",
-    "karma-safari-launcher": "^1.0.0"
+    "karma-safari-launcher": "^1.0.0",
+    "karma": "^1.7.1"
   },
   "directories": {
     "lib": "lib",
@@ -56,7 +59,7 @@
     "url": "https://github.com/wbotelhos/modaly"
   },
   "scripts": {
-    "test": "node_modules/karma/bin/karma start spec/karma.conf.js"
+    "test": "node_modules/karma/bin/karma start karma.conf.js"
   },
   "version": "0.4.0"
 }
