@@ -2,7 +2,7 @@ body, html {
   height: 100%
 }
 
-#modaly-overlay {
+#modaly__overlay {
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -19,6 +19,10 @@ body, html {
 }
 
 .modaly {
+  display: none;
+}
+
+.modaly--visible {
   -moz-box-sizing: border-box;
   -moz-transform: translate(-50%, -50%);
   -ms-box-sizing: border-box;
@@ -28,7 +32,7 @@ body, html {
   -webkit-box-sizing: border-box;
   -webkit-transform: translate(-50%, -50%);
   box-sizing: border-box;
-  display: none;
+  display: block;
   left: 50%;
   position: fixed;
   top: 50%;
@@ -37,14 +41,14 @@ body, html {
   z-index: 1001;
 }
 
-.modaly .body {
+.modaly__body {
   background-color: white;
   color: #111;
   overflow: auto;
   padding: 10px 0 21px;
 }
 
-.modaly-close {
+.modaly__close {
   background: none;
   border: none;
   cursor: pointer;
@@ -58,12 +62,12 @@ body, html {
   top: 3px
 }
 
-.modaly-close:hover {
+.modaly__close:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 40);
   opacity: .4;
 }
 
-.modaly .header {
+.modaly__header {
   background-color: #e2e2e2;
   border-bottom: 1px solid #ccc;
   height: 90px;
