@@ -8,7 +8,7 @@ describe('Modaly', function() {
       '<div id="modal" class="modal">' +
         '<div class="header">' +
           '<h2>Some Header</h2>' +
-          '<input type="button" value="×" class="modaly-close">' +
+          '<input type="button" value="×" class="modaly__close">' +
         '</div>' +
 
         '<div class="body">' +
@@ -20,7 +20,7 @@ describe('Modaly', function() {
   });
 
   afterEach(function() {
-    Factory.clear('#modaly-overlay');
+    Factory.clear('#modaly__overlay');
   });
 
   describe('initialize', function() {
@@ -32,7 +32,7 @@ describe('Modaly', function() {
       link.modaly();
 
       // then
-      expect($('#modaly-overlay').length).toEqual(1);
+      expect($('#modaly__overlay').length).toEqual(1);
     });
 
     it ('starts hidden', function() {
@@ -43,7 +43,7 @@ describe('Modaly', function() {
       link.modaly();
 
       // then
-      expect($('#modaly-overlay').is(':hidden')).toBeTruthy();
+      expect($('#modaly__overlay').is(':hidden')).toBeTruthy();
     });
 
     describe('close', function() {
@@ -51,7 +51,7 @@ describe('Modaly', function() {
         it ('closes the modal', function() {
           // given
           var link  = $('.open').modaly({ closeButton: true }).click(),
-            close = $('.modaly-close');
+            close = $('.modaly__close');
 
           // when
           close.click();
@@ -82,7 +82,7 @@ describe('Modaly', function() {
           link2.modaly();
 
           // then
-          expect($('div#modaly-overlay').length).toEqual(1);
+          expect($('div#modaly__overlay').length).toEqual(1);
         });
       });
     });
@@ -100,7 +100,7 @@ describe('Modaly', function() {
       expect(opt.block).toBeFalsy();
       expect(opt.closeButton).toBeTruthy();
       expect(opt.closeOverlay).toBeTruthy();
-      expect(opt.closeTarget).toEqual('.modaly-close');
+      expect(opt.closeTarget).toEqual('.modaly__close');
       expect(opt.esc).toBeTruthy();
       expect(opt.overlay).toEqual(.5);
       expect(opt.prevent).toBeTruthy();
@@ -118,7 +118,7 @@ describe('Modaly', function() {
 
           // then
           expect($('#modal').data('opened')).toBeFalsy();
-          expect($('#modaly-overlay').data('opened')).toBeFalsy();
+          expect($('#modaly__overlay').data('opened')).toBeFalsy();
         });
       });
 
@@ -132,7 +132,7 @@ describe('Modaly', function() {
 
           // then
           expect($('#modal').data('opened')).toBeTruthy();
-          expect($('#modaly-overlay').data('opened')).toBeTruthy();
+          expect($('#modaly__overlay').data('opened')).toBeTruthy();
         });
       });
     });
@@ -147,7 +147,7 @@ describe('Modaly', function() {
           link.click();
 
           // then
-          expect($('.modaly-close').is(':visible')).toBeTruthy();
+          expect($('.modaly__close').is(':visible')).toBeTruthy();
         });
       });
 
@@ -160,7 +160,7 @@ describe('Modaly', function() {
           link.click();
 
           // then
-          expect($('.modaly-close').is(':visible')).toBeFalsy();
+          expect($('.modaly__close').is(':visible')).toBeFalsy();
         });
       });
     });
@@ -170,7 +170,7 @@ describe('Modaly', function() {
         it ('is closed', function() {
           // given
           var link    = $('.open').modaly({ closeOverlay: true }).click(),
-            overlay = $('#modaly-overlay');
+            overlay = $('#modaly__overlay');
 
           // when
           overlay.click();
@@ -184,7 +184,7 @@ describe('Modaly', function() {
         it ('is not closed', function() {
           // given
           var link    = $('.open').modaly({ closeOverlay: false }).click(),
-            overlay = $('#modaly-overlay');
+            overlay = $('#modaly__overlay');
 
           // when
           overlay.click();
@@ -197,7 +197,7 @@ describe('Modaly', function() {
 
     describe('closeTarget', function() {
       beforeEach(function() {
-        $('.modaly-close').removeClass().addClass('custom-close');
+        $('.modaly__close').removeClass().addClass('custom-close');
       });
 
       it ('changes the hook element', function() {
@@ -223,7 +223,7 @@ describe('Modaly', function() {
           $(document).trigger({ type: 'keyup', which: 27, keyCode: 27 });
 
           // then
-          expect($('.modaly-close').is(':visible')).toBeFalsy();
+          expect($('.modaly__close').is(':visible')).toBeFalsy();
         });
       });
 
@@ -236,7 +236,7 @@ describe('Modaly', function() {
           $(document).trigger({ type: 'keyup', which: 27, keyCode: 27 });
 
           // then
-          expect($('.modaly-close').is(':visible')).toBeTruthy();
+          expect($('.modaly__close').is(':visible')).toBeTruthy();
         });
       });
     });
@@ -488,7 +488,7 @@ describe('Modaly', function() {
         modal.modaly('open');
 
         // when
-        modal.find('.modaly-close').trigger('click');
+        modal.find('.modaly__close').trigger('click');
 
         // then
         expect(modal.data('opened')).toBeFalsy();
