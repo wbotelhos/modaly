@@ -1,16 +1,13 @@
-# jQuery Modaly - A Modal Plugin - [wbotelhos.com/modaly](http://wbotelhos.com/modaly)
+# jQuery Modaly - A Modal Plugin
+
+[![Build Status](https://img.shields.io/travis/wbotelhos/modaly/master.svg)](https://travis-ci.org/wbotelhos/modaly "Travis CI")
+[![NPM Version](https://badge.fury.io/js/modaly-js.svg)](https://badge.fury.io/js/modaly-js)
+[![Dependency](https://david-dm.org/wbotelhos/modaly.svg)](https://david-dm.org/wbotelhos/modaly "Dependency Status")
+[![Dev Dependency](https://david-dm.org/wbotelhos/modaly/dev-status.svg)](https://david-dm.org/wbotelhos/modaly#info=devDependencies "Dev Dependency Status")
+[![Code Climate](https://codeclimate.com/github/wbotelhos/modaly.png)](https://codeclimate.com/github/wbotelhos/modaly)
+[![Support jQuery Modaly](http://img.shields.io/gittip/wbotelhos.svg)](https://gratipay.com/~wbotelhos)
 
 jQuery Modaly is a plugin that generates a simple modal window.
-
-## Version
-
-```
-@version        0.4.0
-@since          2013-04-27
-@author         Washington Botelho
-@documentation  wbotelhos.com/modaly
-@twitter        twitter.com/wbotelhos
-```
 
 ## Required Files
 
@@ -20,6 +17,7 @@ jQuery Modaly is a plugin that generates a simple modal window.
 ## Options
 
 ```js
+attribute:    'href'           // Changes the anchor's attribute.
 block:        false            // Prevents the modal to open.
 closeButton:  true             // Show the close button.
 closeOverlay: true             // Enable close modal clicking on overlay.
@@ -61,10 +59,10 @@ $('a').modaly('close', ['key']);         // Close and removes keys data from mod
 $('a').modaly('block', boolean);         // Block or unblock the modal.
 ```
 
-## Licence
+## Contributors
 
-[The MIT License](http://opensource.org/licenses/MIT)
+[Check it out](http://github.com/wbotelhos/modaly/graphs/contributors)
 
-## Donate
+## Love it!
 
-You can do it via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=X8HEP2878NDEG&item_name=jQuery%20Modaly). Thanks! (:
+Via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=X8HEP2878NDEG&item_name=modaly) or [Gratipay](https://gratipay.com/modaly). Thanks! (:
