@@ -1,10 +1,29 @@
-# jQuery Modaly - A Modal Plugin - http://wbotelhos.com/modaly
+# Modaly - A Tiny Modal
+
+## 0.5.0
+
+### Changes
+
++ The modal stylesheet is applied only when modal is opened;
++ The class `modaly` no more keeps the modal style, it is now on `modaly--visible`;
++ The modal stylesheet is removed when modal is closed;
++ Removed style from `body` and `html`.
+
+### Fixes
+
++ Overlay now has the right `opened` status on data attribute on initialization;
++ When overaly already is on screen, it is not moved to `body`.
+
+### News
+
++ The stylesheet now is based on [BEM](http://getbem.com/introduction);
++ Added options `visible` to keep modal visible on screen.
 
 ## 0.4.0
 
 ### News
 
-+ The `open` function api can receive a hash param with keys that will be added on modal as data parameters.
++ The `open` function api can receive a hash param with keys that will be added on modal as data parameters;
 + The `close` function api can receive an array of data keys as param that will be removed from modal.
 
 ## 0.3.0
