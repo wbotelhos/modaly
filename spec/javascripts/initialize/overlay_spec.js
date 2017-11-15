@@ -17,7 +17,24 @@ describe('#overlay', function() {
       link2.modaly();
 
       // then
-      expect($('div#modaly__overlay').length).toEqual(1);
+      expect($('#modaly__overlay').length).toEqual(1);
+    });
+  });
+
+  context('when overlay already on screen', function() {
+    beforeEach(function() {
+      fixture.load('overlay-home.html');
+    });
+
+    it ('is used and keeped on the same place', function() {
+      // given
+      var link = $('.open');
+
+      // when
+      link.modaly();
+
+      // then
+      expect($('.overlay-home div[data-id="overlay-home"]').length).toEqual(1);
     });
   });
 });

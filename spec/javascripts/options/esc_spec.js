@@ -3,6 +3,8 @@ describe('#esc', function() {
 
   beforeEach(function() {
     fixture.load('default.html');
+
+    $('<div />', { 'data-ref': 'custom', id: 'modaly__overlay' }).appendTo('#fixture_container');
   });
 
   context('true', function() {
