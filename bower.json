@@ -1,6 +1,6 @@
 {
   "authors":     ["Washington Botelho <wbotelhos@gmail.com> (http://wbotelhos.com)"],
-  "description": "jQuery Modaly - A Modal Plugin",
+  "description": "Modaly - A Tiny Modal",
 
   "dependencies": {
     "jquery": "^3.2.1"
