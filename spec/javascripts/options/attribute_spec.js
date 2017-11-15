@@ -2,19 +2,19 @@ describe('#attribute', function() {
   'use strict';
 
   beforeEach(function() {
-    fixture.load('checkbox-href.html');
+    fixture.load('attribute.html');
   });
 
   it ('changes the attribute responsible to indicate the modal', function() {
     // given
-    var checkbox = $(':checkbox');
+    var modal = $('.open');
 
-    checkbox.modaly({ attribute: 'data-href' });
+    modal.modaly({ attribute: 'data-href' });
 
     // when
-    checkbox.modaly('open');
+    modal.click();
 
     // then
-    expect($('.modal').data('opened')).toBeTruthy();
+    expect($('#modal').data('opened')).toBeTruthy();
   });
 });
