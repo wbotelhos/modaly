@@ -1,13 +1,13 @@
-# jQuery Modaly - A Modal Plugin
+# Modaly - A Tiny Modal
 
 [![Build Status](https://img.shields.io/travis/wbotelhos/modaly/master.svg)](https://travis-ci.org/wbotelhos/modaly "Travis CI")
-[![NPM Version](https://badge.fury.io/js/modaly-js.svg)](https://badge.fury.io/js/modaly-js)
+[![NPM Version](https://badge.fury.io/js/modaly.svg)](https://badge.fury.io/js/modaly)
 [![Dependency](https://david-dm.org/wbotelhos/modaly.svg)](https://david-dm.org/wbotelhos/modaly "Dependency Status")
 [![Dev Dependency](https://david-dm.org/wbotelhos/modaly/dev-status.svg)](https://david-dm.org/wbotelhos/modaly#info=devDependencies "Dev Dependency Status")
 [![Code Climate](https://codeclimate.com/github/wbotelhos/modaly.png)](https://codeclimate.com/github/wbotelhos/modaly)
-[![Support jQuery Modaly](http://img.shields.io/gittip/wbotelhos.svg)](https://gratipay.com/~wbotelhos)
+[![Support Modaly](http://img.shields.io/gittip/wbotelhos.svg)](https://gratipay.com/~wbotelhos)
 
-jQuery Modaly is a plugin that generates a simple modal window.
+Modaly is a jquery plugin that generates a tiny modal window.
 
 ## Required Files
 
@@ -27,6 +27,7 @@ overlay:      .5               // Overlay applied on overlay.
 prevent:      true             // Prevent the click action on binded element.
 speed:        200              // Speed to open and close the modal.
 top:          undefined        // Distance between top of window and the modal.
+visible:      false            // Keeps the modal visible on screen.
 ```
 
 ## Usage
