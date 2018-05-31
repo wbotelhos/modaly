@@ -5,7 +5,7 @@
 [![Dependency](https://david-dm.org/wbotelhos/modaly.svg)](https://david-dm.org/wbotelhos/modaly "Dependency Status")
 [![Dev Dependency](https://david-dm.org/wbotelhos/modaly/dev-status.svg)](https://david-dm.org/wbotelhos/modaly#info=devDependencies "Dev Dependency Status")
 [![Code Climate](https://codeclimate.com/github/wbotelhos/modaly.png)](https://codeclimate.com/github/wbotelhos/modaly)
-[![Support Modaly](http://img.shields.io/gittip/wbotelhos.svg)](https://gratipay.com/~wbotelhos)
+[![Patreon](https://img.shields.io/badge/donation-%3C3-brightgreen.svg)](https://www.patreon.com/wbotelhos)
 
 Modaly is a jquery plugin that generates a tiny modal window.
 
@@ -59,11 +59,3 @@ $('a').modaly('close', ['key']);         // Close and removes keys data from mod
 
 $('a').modaly('block', boolean);         // Block or unblock the modal.
 ```
-
-## Contributors
-
-[Check it out](http://github.com/wbotelhos/modaly/graphs/contributors)
-
-## Love it!
-
-Via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=X8HEP2878NDEG&item_name=modaly) or [Gratipay](https://gratipay.com/modaly). Thanks! (:
