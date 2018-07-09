@@ -16,6 +16,19 @@ describe('#open', function() {
     expect($('#modal').is(':visible')).toBeTruthy();
   });
 
+  it ('triggers event', function(done) {
+    // given
+    var link = $('.open').modaly();
+
+    $('#modal').on('modaly:opened', function() {
+      // then
+      done();
+    });
+
+    // when
+    link.modaly('open');
+  });
+
   context('with a hash data', function() {
     it ('is added on modal as data', function() {
       // given
