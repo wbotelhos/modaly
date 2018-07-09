@@ -46,6 +46,15 @@ visible:      false            // Keeps the modal visible on screen.
 $('a').modaly();
 ```
 
+## Callbacks
+
+Callbacks are triggered over the modal element.
+
+```js
+'modaly:opened': triggered when modaly is opened.
+'modaly:closed': triggered when modaly is closed.
+```
+
 ## Functions
 
 ```js

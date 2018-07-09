@@ -1,4 +1,8 @@
-# Modaly - A Tiny Modal
+## 0.6.0
+
+### News
+
++ Added `modaly:opened` and `modaly:closed` callbacks.
 
 ## 0.5.0
 
