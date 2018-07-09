@@ -16,6 +16,19 @@ describe('#close', function() {
     expect($('#modal').data('opened')).toBeFalsy();
   });
 
+  it ('triggers event', function(done) {
+    // given
+    var link = $('.open').modaly().modaly('open');
+
+    $('#modal').on('modaly:closed', function() {
+      // then
+      done();
+    });
+
+    // when
+    link.modaly('close');
+  });
+
   context('with an array params', function() {
     it ('removes the given data parameters from modal', function() {
       // given
