@@ -3,7 +3,7 @@
   "description": "Modaly - A Tiny Modal",
 
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.4.1"
   },
 
   "homepage": "https://github.com/wbotelhos/modaly",
