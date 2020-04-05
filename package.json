@@ -10,7 +10,7 @@
     "index.html"
   ],
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.4.1"
   },
   "description": "Modaly - A Tiny Modal",
   "devDependencies": {
