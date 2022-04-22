@@ -1,11 +1,9 @@
 # Modaly - A Tiny Modal
 
-[![Build Status](https://img.shields.io/travis/wbotelhos/modaly/master.svg)](https://travis-ci.org/wbotelhos/modaly "Travis CI")
+[![CI](https://github.com/wbotelhos/modaly/workflows/CI/badge.svg)](https://github.com/wbotelhos/modaly/actions)
 [![NPM Version](https://badge.fury.io/js/modaly.svg)](https://badge.fury.io/js/modaly)
-[![Dependency](https://david-dm.org/wbotelhos/modaly.svg)](https://david-dm.org/wbotelhos/modaly "Dependency Status")
-[![Dev Dependency](https://david-dm.org/wbotelhos/modaly/dev-status.svg)](https://david-dm.org/wbotelhos/modaly#info=devDependencies "Dev Dependency Status")
-[![Code Climate](https://codeclimate.com/github/wbotelhos/modaly.png)](https://codeclimate.com/github/wbotelhos/modaly)
-[![Patreon](https://img.shields.io/badge/donation-%3C3-brightgreen.svg)](https://www.patreon.com/wbotelhos)
+[![Maintainability](https://api.codeclimate.com/v1/badges/622fc59d2778de69f93a/maintainability)](https://codeclimate.com/github/wbotelhos/modaly/maintainability)
+[![Sponsor](https://img.shields.io/badge/sponsor-%3C3-green)](https://www.patreon.com/wbotelhos)
 
 Modaly is a jquery plugin that generates a tiny modal window.
 
