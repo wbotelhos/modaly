@@ -10,19 +10,19 @@
     "index.html"
   ],
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.6.0"
   },
   "description": "Modaly - A Tiny Modal",
   "devDependencies": {
-    "jasmine-core": "^2.99.1",
+    "jasmine-core": "^4.1.0",
     "jasmine-jquery": "^2.1.1",
-    "karma": "^1.7.1",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-firefox-launcher": "^1.1.0",
+    "karma": "^6.3.19",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-firefox-launcher": "^2.1.2",
     "karma-fixture": "^0.2.6",
     "karma-html2js-preprocessor": "^1.1.0",
     "karma-ie-launcher": "^1.0.0",
-    "karma-jasmine": "^1.1.2",
+    "karma-jasmine": "^2.0.1",
     "karma-opera-launcher": "^1.0.0",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-safari-launcher": "^1.0.0"
