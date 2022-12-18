@@ -1,3 +1,9 @@
+## 0.6.1
+
+### Updates
+
+- Moves from TravisCI to Github Actions;
+
 ## 0.6.0
 
 ### News
