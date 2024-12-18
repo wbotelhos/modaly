@@ -1,6 +1,6 @@
 # Modaly - A Tiny Modal
 
-[![CI](https://github.com/wbotelhos/modaly/workflows/CI/badge.svg)](https://github.com/wbotelhos/modaly/actions)
+[![Tests](https://github.com/wbotelhos/modaly/workflows/Tests/badge.svg)](https://github.com/wbotelhos/modaly/actions)
 [![NPM Version](https://badge.fury.io/js/modaly.svg)](https://badge.fury.io/js/modaly)
 [![Maintainability](https://api.codeclimate.com/v1/badges/622fc59d2778de69f93a/maintainability)](https://codeclimate.com/github/wbotelhos/modaly/maintainability)
 [![Sponsor](https://img.shields.io/badge/sponsor-%3C3-green)](https://www.patreon.com/wbotelhos)
