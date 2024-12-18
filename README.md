@@ -5,12 +5,12 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/622fc59d2778de69f93a/maintainability)](https://codeclimate.com/github/wbotelhos/modaly/maintainability)
 [![Sponsor](https://img.shields.io/badge/sponsor-%3C3-green)](https://www.patreon.com/wbotelhos)
 
-Modaly is a jquery plugin that generates a tiny modal window.
+Modaly is a plugin that generates a tiny modal window.
 
 ## Required Files
 
-+ jquery.modaly.css
-+ jquery.modaly.js
++ modaly.css
++ modaly.js
 
 ## Options
 
