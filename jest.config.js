@@ -136,7 +136,7 @@ module.exports = {
   //   setupFiles: ['./__tests__/helper.js'],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
-  setupFilesAfterEnv: ['./test-helper/index.js'],
+  setupFilesAfterEnv: ['./__tests__/test_helper.js'],
 
   // The number of seconds after which a test is considered as slow and reported as such in the results.
   // slowTestThreshold: 5,
