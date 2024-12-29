@@ -30,7 +30,7 @@
     "jest-extended": "4.0.2"
   },
   "directories": {
-    "lib": "lib",
+    "lib": "src",
     "test": "__tests__"
   },
   "homepage": "https://github.com/wbotelhos/modaly",
@@ -46,11 +46,13 @@
   ],
   "license": "MIT",
   "main": "src/modaly.js",
-  "types": "src/modaly.d.ts",
   "maintainers": [
     "Washington Botelho <wbotelhos@gmail.com> (https://www.wbotelhos.com)"
   ],
   "name": "modaly",
+  "presets": [
+    "@babel/preset-env"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/wbotelhos/modaly"
@@ -60,5 +62,6 @@
     "test": "jest",
     "watch": "gulp watch"
   },
-  "version": "0.7.0"
+  "types": "src/modaly.d.ts",
+  "version": "1.0.0"
 }
