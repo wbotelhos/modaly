@@ -1,16 +1,32 @@
-## 0.6.1
+## 1.0.0
+
+### Break Change
+
+- Drops jQuery;
+- Rename `overlay` option to `overlayOpacity`;
+- Rename `closeTarget` option to `closeSelector`;
+- Removes option `visible` since you can control it via CSS;
+- Removes option `top` since you can control it via CSS;
+- No more creates the overlay element, you need to define it by yourself and set the correct `overlaySelector`;
+
+### Updates
+
+- Adds option `overlaySelector` to indicate the overlay element;
+- Adds option `colseSelector` to indicate the close button element;
+
+## v0.6.1
 
 ### Updates
 
 - Moves from TravisCI to Github Actions;
 
-## 0.6.0
+## v0.6.0
 
 ### News
 
 + Added `modaly:opened` and `modaly:closed` callbacks.
 
-## 0.5.0
+## v0.5.0
 
 ### Changes
 
@@ -29,14 +45,14 @@
 + The stylesheet now is based on [BEM](http://getbem.com/introduction);
 + Added options `visible` to keep modal visible on screen.
 
-## 0.4.0
+## v0.4.0
 
 ### News
 
 + The `open` function api can receive a hash param with keys that will be added on modal as data parameters;
 + The `close` function api can receive an array of data keys as param that will be removed from modal.
 
-## 0.3.0
+## v0.3.0
 
 ### News
 
@@ -51,7 +67,7 @@
 
 + Make sure that checkbox is keeped unchecked into other callbacks, when clicked, if `block` options is `true`.
 
-## 0.2.0
+## v0.2.0
 
 ### News
 
