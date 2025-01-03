@@ -15,8 +15,14 @@ global.xcontext = function xcontext(description, spec) {
 global.Helper = {
   isVisible: (modal) => {
     const style = window.getComputedStyle(modal);
+    const isVisible =
+      style.display !== 'none' && style.visibility !== 'hidden' && style.opacity !== '' && style.opacity !== '0';
 
-    return style.display !== 'none' && style.visibility !== 'hidden' && style.opacity !== '0';
+    console.log('display:', style.display);
+    console.log('visibility:', style.visibility);
+    console.log('opacity:', `'${style.opacity}'`);
+
+    return isVisible;
   },
   load: (file) => require('fs').readFileSync(require('path').resolve(process.cwd(), '__fixtures__', file), 'utf-8'),
   pressEsc: () => {

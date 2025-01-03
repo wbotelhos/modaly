@@ -18,7 +18,8 @@ class Modaly {
 
   close(keys = []) {
     this._hide(this.modal);
-    this._hide(this.overlay);
+
+    if (this.opt.overlay) this._hide(this.overlay);
 
     keys.forEach((key) => delete this.el.dataset[key]);
 
@@ -35,11 +36,11 @@ class Modaly {
       closeOverlay: true,
       closeSelector: '[data-close]',
       esc: true,
+      overlay: true,
       overlayOpacity: 0.5,
       overlaySelector: '[data-overlay]',
       prevent: true,
       speed: 200,
-      top: undefined,
     };
   }
 
@@ -47,7 +48,8 @@ class Modaly {
     this.opt = { ...this.defaults(), ...this.options };
     this.modal = this._modal();
     this.closeButton = this._closeButton();
-    this.overlay = document.querySelector(this.opt.overlaySelector);
+
+    if (this.opt.overlay) this.overlay = document.querySelector(this.opt.overlaySelector);
 
     this._bind();
 
@@ -59,7 +61,8 @@ class Modaly {
 
   open(params = {}) {
     this._show(this.modal, 1);
-    this._show(this.overlay, this.opt.overlayOpacity);
+
+    if (this.opt.overlay) this._show(this.overlay, this.opt.overlayOpacity);
 
     Object.entries(params).forEach(([key, value]) => {
       this.el.dataset[key] = value;
@@ -73,7 +76,7 @@ class Modaly {
   _bind() {
     this.closeButton?.addEventListener('click', () => this.close());
 
-    if (this.opt.closeOverlay) this.overlay?.addEventListener('click', () => this.close());
+    if (this.opt.overlay && this.opt.closeOverlay) this.overlay?.addEventListener('click', () => this.close());
 
     this.el.addEventListener('click', (e) => {
       if (this.opt.prevent) {

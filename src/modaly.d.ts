@@ -3,13 +3,13 @@ export interface ModalyOptions {
   block: boolean;
   closeButton: boolean;
   closeOverlay: boolean;
-  closeTarget: string;
+  closeSelector: string;
   esc: boolean;
-  overlay: number;
+  overlay: boolean;
+  overlayOpacity: number;
+  overlaySelector: number;
   prevent: boolean;
   speed: number;
-  top: number;
-  visible: boolean;
 }
 
 export declare class Modaly {
@@ -19,7 +19,7 @@ export declare class Modaly {
 
   close(): void;
 
-  default(): Partial<ModalyOptions>;
+  defaults(): Partial<ModalyOptions>;
 
   init(): Modaly;
 
@@ -31,9 +31,9 @@ export declare class Modaly {
 
   _hide(element: HTMLElement): void;
 
-  _modal(): void;
+  _isTrue(element: string | boolean): boolean;
 
-  _overlay(): void;
+  _modal(): void;
 
   _show(el: HTMLElement, opacity: number): void;
 }
